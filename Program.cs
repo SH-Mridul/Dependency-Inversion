@@ -23,6 +23,7 @@ namespace DependencyInversionPrinciple
         public string getCustomerNameDataAccess();
     }
 
+    //low level module
     public class CustomerDataAccess : ICustomerDataAccess
     {
         public CustomerDataAccess() { }
@@ -32,7 +33,7 @@ namespace DependencyInversionPrinciple
         }
     }
 
-
+    //High level module
     public class CustomerBl
     {
         public CustomerBl(){}
